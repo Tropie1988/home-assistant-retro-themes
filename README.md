@@ -99,9 +99,10 @@ The CI workflow also runs [`hacs/action`](https://github.com/hacs/action) with `
 - [x] Check visibility and contrast on mobile and desktop, light-themed and dark-themed cards.
 - [x] Test sections view, sidebar, dialogs and form controls.
 - [x] Add **real Home Assistant screenshots** to the README.
-- [ ] Add GitHub repository description, topics and enable Issues.
-- [ ] Confirm the HACS GitHub Action passes with no ignored checks.
-- [ ] Publish the first stable GitHub Release (`v1.0.0`) and submit a catalog PR to [`hacs/default`](https://github.com/hacs/default).
+- [x] Add GitHub repository description, topics and enable Issues.
+- [x] Confirm the HACS GitHub Action passes with no ignored checks.
+- [ ] Publish the first stable GitHub Release (`v1.0.0`).
+- [ ] Submit a catalog PR to [`hacs/default`](https://github.com/hacs/default).
 
 ## Attribution & license
 
