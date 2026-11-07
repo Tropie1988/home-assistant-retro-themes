@@ -1,0 +1,150 @@
+# Home Assistant Theme — Macintosh System 7 Classic
+# Versione 1.0 | Tema chiaro, senza HACS e senza custom card.
+# Ispirazione: Macintosh System 7 (1991), non Mac OS 8/9 Platinum.
+# Installazione: /config/themes/macos_system_7_classic.yaml
+# Richiede nel configuration.yaml:
+# frontend:
+#   themes: !include_dir_merge_named themes
+#
+# Limiti del sistema di temi nativo: il tema cambia colori, tipografia, bordi
+# e sfondi. Non trasforma la dashboard in un Finder con menu Apple, finestre
+# trascinabili o righe decorative nei titoli delle singole schede.
+
+Macintosh System 7 Classic:
+  # Bianco/nero e grigi, come le interfacce Macintosh classiche.
+  primary-color: "#191919"
+  accent-color: "#303030"
+  dark-primary-color: "#000000"
+  light-primary-color: "#7A7A7A"
+  primary-background-color: "#E4E4E4"
+  secondary-background-color: "#F4F4F4"
+  card-background-color: "#FFFFFF"
+  clear-background-color: "#FFFFFF"
+  primary-text-color: "#101010"
+  secondary-text-color: "#494949"
+  text-primary-color: "#FFFFFF"
+  disabled-text-color: "#8C8C8C"
+  divider-color: "#777777"
+
+  # Desktop "dither" a scacchiera di 2 pixel (richiamo ai Mac 1-bit).
+  # Per uno sfondo uniforme, sostituire il valore con "#DCDCDC".
+  lovelace-background: "repeating-conic-gradient(#DEDEDE 0% 25%, #ECECEC 0% 50%) 0 0 / 4px 4px fixed"
+  ha-panel-background: "#E4E4E4"
+  ha-panel-toolbar-background: "#FFFFFF"
+  ha-data-table-background: "#FFFFFF"
+
+  # La barra superiore richiama il menu Macintosh: bianca, testo nero.
+  app-header-background-color: "#FFFFFF"
+  app-header-text-color: "#101010"
+  app-header-border-bottom: "2px solid #000000"
+  app-theme-color: "#FFFFFF"
+
+  # Barra laterale con selezione nera a contrasto.
+  sidebar-background-color: "#F5F5F5"
+  sidebar-text-color: "#101010"
+  sidebar-icon-color: "#333333"
+  sidebar-selected-icon-color: "#000000"
+  sidebar-selected-text-color: "#000000"
+
+  # Schede come finestre del Finder: bianche, spigoli a 90°, ombra dura.
+  ha-card-background: "#FFFFFF"
+  ha-card-border-radius: "0px"
+  ha-card-border-width: "1px"
+  ha-card-border-color: "#000000"
+  ha-card-box-shadow: "2px 2px 0 #000000"
+  ha-card-header-color: "#101010"
+  ha-card-header-font-size: "17px"
+  ha-card-header-font-family: 'Chicago, Geneva, Helvetica, Arial, sans-serif'
+  ha-section-border-radius: "0px"
+  ha-section-background-color: "transparent"
+  ha-view-sections-extra-top-margin: "16px"
+  ha-view-sections-column-gap: "14px"
+  ha-view-sections-row-gap: "14px"
+  grid-card-gap: "12px"
+  stack-card-gap: "12px"
+
+  # Font storici se già installati sul dispositivo; altrimenti fallback.
+  # Il tema NON installa automaticamente il font Chicago.
+  ha-font-family-body: 'Geneva, Chicago, Helvetica, Arial, sans-serif'
+  ha-font-family-heading: 'Chicago, Geneva, Helvetica, Arial, sans-serif'
+  ha-font-weight-heading: "700"
+
+  # Azzeramento degli angoli arrotondati nei nuovi componenti HA.
+  ha-border-radius-xs: "0px"
+  ha-border-radius-sm: "0px"
+  ha-border-radius-md: "0px"
+  ha-border-radius-lg: "0px"
+  ha-border-radius-xl: "0px"
+  ha-border-radius-2xl: "0px"
+  ha-picture-border-radius: "0px"
+  ha-picture-border-radius-sm: "0px"
+
+  # Scala primaria grigia per pulsanti, switch e controlli recenti.
+  ha-color-primary-05: "#050505"
+  ha-color-primary-10: "#101010"
+  ha-color-primary-20: "#202020"
+  ha-color-primary-30: "#333333"
+  ha-color-primary-40: "#454545"
+  ha-color-primary-50: "#606060"
+  ha-color-primary-60: "#777777"
+  ha-color-primary-70: "#999999"
+  ha-color-primary-80: "#BDBDBD"
+  ha-color-primary-90: "#DEDEDE"
+  ha-color-primary-95: "#F3F3F3"
+
+  # Superfici e bordi per il nuovo sistema di design.
+  ha-color-surface-default: "#FFFFFF"
+  ha-color-surface-low: "#F5F5F5"
+  ha-color-surface-lower: "#E4E4E4"
+  ha-color-on-surface-default: "#101010"
+  ha-color-text-primary: "#101010"
+  ha-color-text-secondary: "#494949"
+  ha-color-form-background: "#FFFFFF"
+  ha-color-form-background-hover: "#F2F2F2"
+  ha-color-border-neutral-quiet: "#C4C4C4"
+  ha-color-border-neutral-normal: "#777777"
+  ha-color-border-neutral-loud: "#000000"
+  ha-button-neutral-color: "#E4E4E4"
+  chip-background-color: "#ECECEC"
+
+  # Controlli quadrati e sobri.
+  input-fill-color: "#FFFFFF"
+  input-ink-color: "#101010"
+  input-label-ink-color: "#494949"
+  input-outlined-idle-border-color: "#555555"
+  input-outlined-hover-border-color: "#000000"
+  slider-color: "#202020"
+  slider-secondary-color: "#B0B0B0"
+  paper-item-icon-color: "#333333"
+  paper-item-icon-active-color: "#161616"
+  paper-toggle-button-checked-button-color: "#FFFFFF"
+  paper-toggle-button-checked-bar-color: "#333333"
+  paper-toggle-button-unchecked-button-color: "#F8F8F8"
+  paper-toggle-button-unchecked-bar-color: "#B8B8B8"
+
+  # Tabelle: righe alternate bianche e grigio chiarissimo.
+  table-header-background-color: "#E4E4E4"
+  table-row-background-color: "#FFFFFF"
+  table-row-alternative-background-color: "#F4F4F4"
+  data-table-background-color: "#FFFFFF"
+
+  # Stati entità: interfaccia quasi monocromatica; piccole eccezioni
+  # cromatiche utili per distinguere gli stati e segnalare gli allarmi.
+  state-icon-color: "#666666"
+  state-active-color: "#161616"
+  state-inactive-color: "#989898"
+  state-light-active-color: "#C09432"
+  state-switch-active-color: "#303030"
+  state-climate-heat-color: "#A45D3A"
+  state-unavailable-color: "#A0A0A0"
+  error-color: "#B32222"
+  warning-color: "#AE7619"
+  success-color: "#4B7952"
+  info-color: "#4D4D4D"
+
+  # Plancia Energia: colori poco saturi, ma tra loro distinguibili.
+  energy-solar-color: "#C09432"
+  energy-grid-consumption-color: "#414A5C"
+  energy-grid-return-color: "#6B8690"
+  energy-battery-in-color: "#4B7952"
+  energy-battery-out-color: "#9B7257"

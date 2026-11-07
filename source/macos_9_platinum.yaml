@@ -1,0 +1,159 @@
+# Home Assistant Theme — Mac OS 9 Platinum
+# Versione 1.0 | Ispirazione: Mac OS 9 (1999), interfaccia Platinum.
+# Non confondere con Mac OS X: nessuna Aqua, dock o effetto traslucido.
+# Nessuna dipendenza HACS, nessuna custom card.
+#
+# INSTALLAZIONE
+#   1. Copiare in /config/themes/macos_9_platinum.yaml
+#   2. Verificare in configuration.yaml:
+#        frontend:
+#          themes: !include_dir_merge_named themes
+#   3. Eseguire l'azione frontend.reload_themes.
+#   4. Selezionare "Mac OS 9 Platinum" dal profilo utente.
+#
+# NOTE
+#   - Il tema modifica colori, forme, bordi, caratteri e sfondi.
+#   - La barra menu Apple, Finder, le vere barre a righe e finestre trascinabili
+#     richiedono una dashboard personalizzata: non le crea un tema nativo.
+#   - I caratteri Charcoal e Geneva vengono usati solo se disponibili sul client.
+#   - La dashboard energetica mantiene colori funzionali ben distinguibili.
+
+Mac OS 9 Platinum:
+  # Base Platinum: alluminio chiaro, pannelli grigi, accento blu-lavanda.
+  primary-color: "#555C9A"
+  accent-color: "#7477B3"
+  dark-primary-color: "#333C75"
+  light-primary-color: "#CBCBE9"
+  primary-background-color: "#D8D8D8"
+  secondary-background-color: "#EEEEEE"
+  card-background-color: "#E9E9E9"
+  clear-background-color: "#FFFFFF"
+  primary-text-color: "#202020"
+  secondary-text-color: "#515151"
+  text-primary-color: "#FFFFFF"
+  disabled-text-color: "#8C8C8C"
+  divider-color: "#9A9A9A"
+
+  # Il Mac OS 9 usava spesso un desktop lavanda. Texture leggera a righe
+  # senza immagini esterne e senza risorse aggiuntive.
+  # Per uno sfondo uniforme: "#77769A".
+  lovelace-background: "repeating-linear-gradient(0deg, #757596 0px, #757596 2px, #7A7A9D 2px, #7A7A9D 4px) fixed"
+  ha-panel-background: "#D8D8D8"
+  ha-panel-toolbar-background: "#ECECEC"
+  ha-data-table-background: "#FFFFFF"
+
+  # Barra menu chiara, tipica del Mac classico (non blu stile Windows).
+  app-header-background-color: "#ECECEC"
+  app-header-text-color: "#202020"
+  app-header-border-bottom: "1px solid #777777"
+  app-theme-color: "#ECECEC"
+
+  # Finder / barra laterale: grigio Platinum, selezioni lavanda.
+  sidebar-background-color: "#E6E6E6"
+  sidebar-text-color: "#252525"
+  sidebar-icon-color: "#616161"
+  sidebar-selected-icon-color: "#4D528A"
+  sidebar-selected-text-color: "#333A77"
+
+  # Finestre e pannelli rialzati, leggero smusso a due toni.
+  # Questo effetto non sostituisce vere barre del titolo a scanalature.
+  ha-card-background: "#E9E9E9"
+  ha-card-border-radius: "2px"
+  ha-card-border-width: "1px"
+  ha-card-border-color: "#858585"
+  ha-card-box-shadow: "inset 1px 1px 0 #FFFFFF, inset -1px -1px 0 #A8A8A8, 1px 2px 0 #777777"
+  ha-card-header-color: "#292929"
+  ha-card-header-font-size: "17px"
+  ha-card-header-font-family: "Charcoal, Geneva, 'Lucida Grande', Verdana, sans-serif"
+  ha-section-border-radius: "2px"
+  ha-section-background-color: "transparent"
+  ha-view-sections-extra-top-margin: "14px"
+  ha-view-sections-column-gap: "12px"
+  ha-view-sections-row-gap: "12px"
+  grid-card-gap: "10px"
+  stack-card-gap: "10px"
+
+  # Il font dell'epoca era Charcoal; Geneva come secondo riferimento.
+  ha-font-family-body: "Charcoal, Geneva, 'Lucida Grande', Verdana, Arial, sans-serif"
+  ha-font-family-heading: "Charcoal, Geneva, 'Lucida Grande', Verdana, Arial, sans-serif"
+  ha-font-weight-heading: "700"
+
+  # Componenti moderni quasi squadrati, senza look 'Aqua'.
+  ha-border-radius-xs: "2px"
+  ha-border-radius-sm: "2px"
+  ha-border-radius-md: "3px"
+  ha-border-radius-lg: "3px"
+  ha-border-radius-xl: "4px"
+  ha-border-radius-2xl: "4px"
+  ha-picture-border-radius: "2px"
+  ha-picture-border-radius-sm: "2px"
+
+  # Palette completa: anche switch e controlli delle versioni recenti di HA.
+  ha-color-primary-05: "#1D1E38"
+  ha-color-primary-10: "#292C50"
+  ha-color-primary-20: "#343A68"
+  ha-color-primary-30: "#444B80"
+  ha-color-primary-40: "#555C9A"
+  ha-color-primary-50: "#6C71AE"
+  ha-color-primary-60: "#888AC2"
+  ha-color-primary-70: "#A5A5D3"
+  ha-color-primary-80: "#C5C4E3"
+  ha-color-primary-90: "#E0DFF0"
+  ha-color-primary-95: "#F2F1F8"
+
+  # Design token per superfici, testi e controlli più recenti.
+  ha-color-surface-default: "#E9E9E9"
+  ha-color-surface-low: "#F2F2F2"
+  ha-color-surface-lower: "#D8D8D8"
+  ha-color-on-surface-default: "#202020"
+  ha-color-text-primary: "#202020"
+  ha-color-text-secondary: "#515151"
+  ha-color-form-background: "#FFFFFF"
+  ha-color-form-background-hover: "#F4F4F8"
+  ha-color-form-background-disabled: "#E0E0E0"
+  ha-color-border-neutral-quiet: "#C6C6C6"
+  ha-color-border-neutral-normal: "#969696"
+  ha-color-border-neutral-loud: "#686868"
+  ha-button-neutral-color: "#E6E6E6"
+  chip-background-color: "#DCDCDC"
+
+  # Campi incassati e selezioni coerenti con il tema Platinum.
+  input-fill-color: "#FFFFFF"
+  input-ink-color: "#202020"
+  input-label-ink-color: "#515151"
+  input-outlined-idle-border-color: "#8C8C8C"
+  input-outlined-hover-border-color: "#555C9A"
+  slider-color: "#646AA8"
+  slider-secondary-color: "#B3B3B3"
+  paper-item-icon-color: "#606060"
+  paper-item-icon-active-color: "#555C9A"
+  paper-toggle-button-checked-button-color: "#FFFFFF"
+  paper-toggle-button-checked-bar-color: "#656BA8"
+  paper-toggle-button-unchecked-button-color: "#EFEFEF"
+  paper-toggle-button-unchecked-bar-color: "#A5A5A5"
+
+  # Tabelle e liste: sfondo bianco da Finder e intestazioni grigie.
+  table-header-background-color: "#DEDEDE"
+  table-row-background-color: "#FFFFFF"
+  table-row-alternative-background-color: "#F3F3F3"
+  data-table-background-color: "#FFFFFF"
+
+  # Stati: accenti discreti, ma sufficientemente visibili.
+  state-icon-color: "#636363"
+  state-active-color: "#555C9A"
+  state-inactive-color: "#9A9A9A"
+  state-light-active-color: "#CE9626"
+  state-switch-active-color: "#58649A"
+  state-climate-heat-color: "#B26A49"
+  state-unavailable-color: "#989898"
+  error-color: "#AF3737"
+  warning-color: "#B17D24"
+  success-color: "#457A5D"
+  info-color: "#555C9A"
+
+  # Plancia Energia: colori chiari e leggibili, non tutti lavanda.
+  energy-solar-color: "#D7A44A"
+  energy-grid-consumption-color: "#565E91"
+  energy-grid-return-color: "#7493B1"
+  energy-battery-in-color: "#52886C"
+  energy-battery-out-color: "#A47D56"

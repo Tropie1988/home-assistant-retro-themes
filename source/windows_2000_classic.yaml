@@ -1,0 +1,130 @@
+# Home Assistant Theme — Windows 2000 Professional Classic
+# Versione 1.0 | Nessun HACS, nessuna custom card.
+# Installazione: /config/themes/windows_2000_classic.yaml
+# Il tema modifica colori, bordi, font e spaziature, NON la struttura della dashboard.
+# Nota: le barre con gradiente e i pulsanti Start non sono realizzabili
+# fedelmente con le sole variabili di un tema HA.
+
+Windows 2000 Professional:
+  # Colori principali: ispirati a Windows 2000 Professional (schema Classic)
+  # Blu titolo: #0A246A | Blu desktop: #3A6EA5
+  # Grigio controlli: #D4D0C8 | Azzurro: #A6CAF0
+  primary-color: "#0A246A"
+  accent-color: "#3A6EA5"
+  dark-primary-color: "#081B50"
+  light-primary-color: "#A6CAF0"
+  primary-background-color: "#D4D0C8"
+  secondary-background-color: "#ECE9D8"
+  card-background-color: "#D4D0C8"
+  clear-background-color: "#FFFFFF"
+  primary-text-color: "#000000"
+  secondary-text-color: "#444444"
+  text-primary-color: "#FFFFFF"
+  disabled-text-color: "#808080"
+  divider-color: "#808080"
+
+  # Desktop e pannelli di Home Assistant
+  lovelace-background: "#3A6EA5"
+  ha-panel-background: "#D4D0C8"
+  ha-panel-toolbar-background: "#ECE9D8"
+  ha-data-table-background: "#FFFFFF"
+
+  # Barra superiore blu scuro e navigazione laterale grigio caldo
+  app-header-background-color: "#0A246A"
+  app-header-text-color: "#FFFFFF"
+  app-header-border-bottom: "2px solid #404040"
+  app-theme-color: "#0A246A"
+  sidebar-background-color: "#D4D0C8"
+  sidebar-text-color: "#000000"
+  sidebar-icon-color: "#444444"
+  sidebar-selected-icon-color: "#0A246A"
+  sidebar-selected-text-color: "#0A246A"
+
+  # Schede squadrate come finestre: ombreggiatura 3D rialzata
+  ha-card-background: "#D4D0C8"
+  ha-card-border-radius: "0px"
+  ha-card-border-width: "1px"
+  ha-card-border-color: "#808080"
+  ha-card-box-shadow: "inset 1px 1px 0 #FFFFFF, inset -1px -1px 0 #404040, 2px 2px 0 #808080"
+  ha-card-header-color: "#0A246A"
+  ha-card-header-font-size: "17px"
+  ha-card-header-font-family: 'Tahoma, Verdana, Arial, sans-serif'
+  ha-section-border-radius: "0px"
+  ha-section-background-color: "transparent"
+  ha-view-sections-extra-top-margin: "14px"
+  ha-view-sections-column-gap: "12px"
+  ha-view-sections-row-gap: "12px"
+  grid-card-gap: "10px"
+  stack-card-gap: "10px"
+
+  # Tipografia: Windows 2000 utilizzava prevalentemente Tahoma
+  ha-font-family-body: 'Tahoma, Verdana, Arial, sans-serif'
+  ha-font-family-heading: 'Tahoma, Verdana, Arial, sans-serif'
+  ha-font-weight-heading: "700"
+
+  # Spigoli netti anche nei componenti HA moderni
+  ha-border-radius-xs: "0px"
+  ha-border-radius-sm: "0px"
+  ha-border-radius-md: "0px"
+  ha-border-radius-lg: "0px"
+  ha-border-radius-xl: "0px"
+  ha-border-radius-2xl: "0px"
+
+  # Palette primaria per componenti recenti (token design system)
+  ha-color-primary-05: "#081329"
+  ha-color-primary-10: "#0A1B40"
+  ha-color-primary-20: "#0A246A"
+  ha-color-primary-30: "#153B7D"
+  ha-color-primary-40: "#22518E"
+  ha-color-primary-50: "#3A6EA5"
+  ha-color-primary-60: "#5686B4"
+  ha-color-primary-70: "#7FA9D0"
+  ha-color-primary-80: "#A6CAF0"
+  ha-color-primary-90: "#D6E7F7"
+  ha-color-primary-95: "#EDF5FC"
+
+  # Superfici, testi e bordi per interfaccia HA recente
+  ha-color-surface-default: "#D4D0C8"
+  ha-color-surface-low: "#ECE9D8"
+  ha-color-surface-lower: "#F4F2E8"
+  ha-color-on-surface-default: "#000000"
+  ha-color-text-primary: "#000000"
+  ha-color-text-secondary: "#444444"
+  ha-color-form-background: "#FFFFFF"
+  ha-color-form-background-hover: "#F5F5F5"
+  ha-color-border-neutral-quiet: "#C1BDB5"
+  ha-color-border-neutral-normal: "#808080"
+  ha-color-border-neutral-loud: "#404040"
+  ha-button-neutral-color: "#D4D0C8"
+  chip-background-color: "#ECE9D8"
+
+  # Stati delle entità: icone sobrie e colori operativi leggibili
+  state-icon-color: "#4D5864"
+  state-light-active-color: "#E9AA16"
+  state-switch-active-color: "#256D36"
+  state-climate-heat-color: "#BF4A2B"
+  state-unavailable-color: "#808080"
+  error-color: "#B00020"
+  warning-color: "#AF7100"
+  success-color: "#237A38"
+  info-color: "#0A246A"
+
+  # Campi, slider, tabelle e selezioni
+  input-fill-color: "#FFFFFF"
+  input-ink-color: "#000000"
+  input-label-ink-color: "#444444"
+  input-outlined-idle-border-color: "#808080"
+  input-outlined-hover-border-color: "#0A246A"
+  slider-color: "#0A246A"
+  slider-secondary-color: "#808080"
+  table-header-background-color: "#ECE9D8"
+  table-row-background-color: "#FFFFFF"
+  table-row-alternative-background-color: "#F1EFE8"
+  data-table-background-color: "#FFFFFF"
+
+  # Plancia Energia — distinguere produzione, rete e accumulo
+  energy-solar-color: "#E7AB20"
+  energy-grid-consumption-color: "#0A246A"
+  energy-grid-return-color: "#3A6EA5"
+  energy-battery-in-color: "#258047"
+  energy-battery-out-color: "#9F7A20"

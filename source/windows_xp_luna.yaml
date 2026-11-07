@@ -1,0 +1,151 @@
+# Home Assistant Theme — Windows XP Luna Blue (2001)
+# Collezione Retro OS | Nessuna dipendenza HACS.
+# Stile Luna blu (NON Windows Classic): barre blu intenso, superfici
+# avorio, blu elettrico, accent green Start; font Tahoma.
+#
+# Installazione:
+#  1. Copiare in /config/themes/windows_xp_luna.yaml
+#  2. In configuration.yaml (se non gia presente):
+#       frontend:
+#         themes: !include_dir_merge_named themes
+#  3. Eseguire frontend.reload_themes e scegliere il tema nel profilo.
+#
+# Nota: il vero pulsante Start, la taskbar e i pulsanti lucidi delle finestre
+# richiedono una dashboard dedicata; un tema YAML non li crea.
+
+Windows XP Luna Blue:
+  # Palette Luna: barra blu, selezioni blue e pulsanti verde Start
+  primary-color: "#245EDB"
+  accent-color: "#3C8D2F"
+  dark-primary-color: "#0A3EA5"
+  light-primary-color: "#8DB9FA"
+  primary-background-color: "#D6E3F3"
+  secondary-background-color: "#ECE9D8"
+  card-background-color: "#FFFDF3"
+  clear-background-color: "#FFFFFF"
+  primary-text-color: "#202020"
+  secondary-text-color: "#505B68"
+  text-primary-color: "#FFFFFF"
+  disabled-text-color: "#8A8A85"
+  divider-color: "#B5BDD0"
+
+  # Desktop blu XP: sfumatura senza immagini esterne.
+  lovelace-background: "linear-gradient(180deg, #316BC7 0%, #70A1E3 52%, #B8D1EE 100%) fixed"
+  ha-panel-background: "#EAF0F8"
+  ha-panel-toolbar-background: "#D2DFF1"
+  ha-data-table-background: "#FFFFFF"
+
+  # Barra applicazione / titolo in stile XP (colore pieno per compatibilita)
+  app-header-background-color: "#245EDB"
+  app-header-text-color: "#FFFFFF"
+  app-header-border-bottom: "2px solid #164CBB"
+  app-theme-color: "#245EDB"
+
+  # Il menu di Esplora risorse: azzurro polvere e selezioni blu
+  sidebar-background-color: "#D7E5F6"
+  sidebar-text-color: "#193B72"
+  sidebar-icon-color: "#3566A9"
+  sidebar-selected-icon-color: "#245EDB"
+  sidebar-selected-text-color: "#164AAB"
+
+  # Finestre/pannelli XP: carta avorio e ombre blu morbide
+  ha-card-background: "#FFFDF3"
+  ha-card-border-radius: "8px"
+  ha-card-border-width: "1px"
+  ha-card-border-color: "#94B6E7"
+  ha-card-box-shadow: "0 2px 1px #FFFFFF80, 0 3px 8px #103F8840"
+  ha-card-header-color: "#1749AA"
+  ha-card-header-font-size: "18px"
+  ha-card-header-font-family: "Tahoma, 'Trebuchet MS', Verdana, sans-serif"
+  ha-section-border-radius: "8px"
+  ha-section-background-color: "transparent"
+  ha-view-sections-extra-top-margin: "16px"
+  ha-view-sections-column-gap: "12px"
+  ha-view-sections-row-gap: "12px"
+  grid-card-gap: "10px"
+  stack-card-gap: "10px"
+
+  # Windows XP aveva Tahoma e una gerarchia compatta
+  ha-font-family-body: "Tahoma, 'Trebuchet MS', Verdana, Arial, sans-serif"
+  ha-font-family-heading: "Tahoma, 'Trebuchet MS', Verdana, Arial, sans-serif"
+  ha-font-weight-heading: "700"
+
+  # Luna ha bordi smussati, non spigoli vivi come Windows 2000
+  ha-border-radius-xs: "3px"
+  ha-border-radius-sm: "5px"
+  ha-border-radius-md: "7px"
+  ha-border-radius-lg: "8px"
+  ha-border-radius-xl: "10px"
+  ha-border-radius-2xl: "12px"
+  ha-picture-border-radius: "6px"
+  ha-picture-border-radius-sm: "4px"
+
+  # Scala primaria blues per i componenti HA attuali
+  ha-color-primary-05: "#071B4E"
+  ha-color-primary-10: "#092D76"
+  ha-color-primary-20: "#0D429F"
+  ha-color-primary-30: "#1653BE"
+  ha-color-primary-40: "#245EDB"
+  ha-color-primary-50: "#3779E7"
+  ha-color-primary-60: "#5A93F0"
+  ha-color-primary-70: "#8DB9FA"
+  ha-color-primary-80: "#B0CEFD"
+  ha-color-primary-90: "#D7E5FF"
+  ha-color-primary-95: "#EDF4FF"
+
+  # Form e superfici: avorio di Esplora risorse, pannelli azzurri
+  ha-color-surface-default: "#FFFDF3"
+  ha-color-surface-low: "#FFFFFF"
+  ha-color-surface-lower: "#E3EAF4"
+  ha-color-on-surface-default: "#202020"
+  ha-color-text-primary: "#202020"
+  ha-color-text-secondary: "#505B68"
+  ha-color-form-background: "#FFFFFF"
+  ha-color-form-background-hover: "#F4F8FF"
+  ha-color-form-background-disabled: "#E2E6EC"
+  ha-color-border-neutral-quiet: "#C2D2EB"
+  ha-color-border-neutral-normal: "#94B6E7"
+  ha-color-border-neutral-loud: "#3973C5"
+  ha-button-neutral-color: "#E8EDF6"
+  chip-background-color: "#DFE9FA"
+
+  # Campi bianchi e selezioni blu; gli switch attivi riprendono il verde XP
+  input-fill-color: "#FFFFFF"
+  input-ink-color: "#202020"
+  input-label-ink-color: "#4B5F79"
+  input-outlined-idle-border-color: "#8DA9CC"
+  input-outlined-hover-border-color: "#245EDB"
+  slider-color: "#245EDB"
+  slider-secondary-color: "#AFD2FC"
+  paper-item-icon-color: "#4A75A7"
+  paper-item-icon-active-color: "#245EDB"
+  paper-toggle-button-checked-button-color: "#FFFFFF"
+  paper-toggle-button-checked-bar-color: "#3C8D2F"
+  paper-toggle-button-unchecked-button-color: "#F7F7F3"
+  paper-toggle-button-unchecked-bar-color: "#9BB1CF"
+
+  # Esplora risorse: intestazioni blu pallido e righe bianche
+  table-header-background-color: "#DCE8F9"
+  table-row-background-color: "#FFFFFF"
+  table-row-alternative-background-color: "#F3F7FD"
+  data-table-background-color: "#FFFFFF"
+
+  # Luci, commutatori, clima e avvisi facilmente riconoscibili
+  state-icon-color: "#4B729C"
+  state-active-color: "#245EDB"
+  state-inactive-color: "#8D9DB3"
+  state-light-active-color: "#E7A91C"
+  state-switch-active-color: "#3C8D2F"
+  state-climate-heat-color: "#D15E34"
+  state-unavailable-color: "#9AA7B9"
+  error-color: "#CE3E3E"
+  warning-color: "#BF7D12"
+  success-color: "#3C8D2F"
+  info-color: "#245EDB"
+
+  # Energia: palette differenziata, non soltanto blu
+  energy-solar-color: "#ECA923"
+  energy-grid-consumption-color: "#245EDB"
+  energy-grid-return-color: "#71A7E3"
+  energy-battery-in-color: "#3C8D2F"
+  energy-battery-out-color: "#A67929"

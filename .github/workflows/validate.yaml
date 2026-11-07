@@ -1,0 +1,33 @@
+name: Validate themes
+
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: "0 5 * * 1"
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  theme-files:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install validator
+        run: python -m pip install --disable-pip-version-check PyYAML==6.0.2
+      - name: Confirm generated bundle is current
+        run: python tools/build.py --check
+      - name: Validate YAML and compare originals
+        run: python tools/validate.py
+
+  hacs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: HACS / Marketplace validation
+        uses: hacs/action@main
+        with:
+          category: "theme"

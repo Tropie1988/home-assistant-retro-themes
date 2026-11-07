@@ -1,0 +1,145 @@
+# Mac OS X 10.0 Cheetah - Aqua (2001)
+# Tema Home Assistant: nessuna dipendenza HACS, modalita chiara.
+# Installazione: /config/themes/macos_x_10_cheetah_aqua.yaml
+# Per la configurazione: frontend: {themes: !include_dir_merge_named themes}
+# Note: le sfumature della barra menu, i pulsanti gelatinosi
+# e il Dock autentico non si possono ricreare con il solo tema YAML.
+
+Mac OS X 10.0 - Cheetah Aqua:
+  # Colori Aqua original-style, adattati alla leggibilita di HA
+  primary-color: "#1678CE"
+  dark-primary-color: "#09549A"
+  darker-primary-color: "#063D77"
+  light-primary-color: "#B7E6FF"
+  accent-color: "#21A5F5"
+
+  # Nuova palette HA per controlli e widget moderni
+  ha-color-primary-05: "#071E38"
+  ha-color-primary-10: "#0B3056"
+  ha-color-primary-20: "#0C4B87"
+  ha-color-primary-30: "#0864B5"
+  ha-color-primary-40: "#1678CE"
+  ha-color-primary-50: "#329AE8"
+  ha-color-primary-60: "#56B7F2"
+  ha-color-primary-70: "#81CCF7"
+  ha-color-primary-80: "#B6E2FA"
+  ha-color-primary-90: "#DDF2FF"
+  ha-color-primary-95: "#F2FAFF"
+
+  # Sfondo: richiamo alla carta da parati Aqua, meno saturo per leggibilita
+  primary-background-color: "#D9E9FA"
+  secondary-background-color: "#EAF0F7"
+  clear-background-color: "#FFFFFF"
+  card-background-color: "#FFFFFF"
+  lovelace-background: >-
+    radial-gradient(ellipse 80% 70% at 5% -20%, rgba(255,255,255,0.90) 0%, rgba(255,255,255,0) 75%),
+    radial-gradient(ellipse 80% 70% at 110% 115%, rgba(81,142,209,0.32) 0%, rgba(81,142,209,0) 76%),
+    linear-gradient(145deg, #C0DEFC 0%, #E7F3FF 46%, #A9CAED 100%) fixed
+  ha-panel-background: "linear-gradient(145deg, #D5E8FA 0%, #EEF6FF 65%, #BCD4EF 100%) fixed"
+
+  # Aqua: testo nitido, argento e separatori sottili
+  primary-text-color: "#202B39"
+  secondary-text-color: "#617181"
+  text-primary-color: "#FFFFFF"
+  text-light-primary-color: "#202B39"
+  disabled-text-color: "#A2ADB7"
+  disabled-color: "#C1CAD3"
+  divider-color: "#B8C6D4"
+  outline-color: "#AFC1D3"
+  outline-hover-color: "#7D9CBC"
+  scrollbar-thumb-color: "#9FC1E2"
+  shadow-color: "rgba(30, 59, 91, 0.20)"
+
+  # Titoli in stile Lucida Grande dei primi Mac OS X
+  ha-font-family-body: "'Lucida Grande', 'Helvetica Neue', 'Segoe UI', Arial, sans-serif"
+  ha-font-family-heading: "'Lucida Grande', 'Helvetica Neue', 'Segoe UI', Arial, sans-serif"
+  ha-card-header-font-family: "'Lucida Grande', 'Helvetica Neue', 'Segoe UI', Arial, sans-serif"
+  ha-card-header-color: "#26384B"
+  ha-font-weight-heading: "600"
+
+  # Menu superiore argento. Solo colore pieno: HA non supporta gradienti qui.
+  app-header-background-color: "#E4EAF1"
+  app-header-text-color: "#203246"
+  app-header-border-bottom: "1px solid #A6B6C7"
+  app-header-edit-background-color: "#315C8D"
+  app-header-edit-text-color: "#FFFFFF"
+  app-theme-color: "#E4EAF1"
+
+  # Sidebar Finder chiara
+  sidebar-background-color: "#EDF1F6"
+  sidebar-text-color: "#2D3D4F"
+  sidebar-icon-color: "#6385A4"
+  sidebar-selected-icon-color: "#0875CF"
+  sidebar-selected-text-color: "#075C9F"
+
+  # Finestre e schede: bordi morbidi e ombre da Aqua
+  ha-card-background: "linear-gradient(180deg, #FFFFFF 0%, #F8FBFF 100%)"
+  ha-card-border-radius: "10px"
+  ha-card-border-width: "1px"
+  ha-card-border-color: "#A9BBCD"
+  ha-card-box-shadow: "0 2px 0 rgba(255,255,255,0.95) inset, 0 4px 12px rgba(29,61,99,0.18), 0 1px 3px rgba(29,61,99,0.12)"
+  ha-card-header-font-size: "20px"
+  ha-section-background-color: "rgba(248,251,255,0.50)"
+  ha-section-border-radius: "12px"
+  ha-heading-card-title-color: "#183F6A"
+  ha-heading-card-subtitle-color: "#3B668F"
+  ha-picture-border-radius: "8px"
+  ha-picture-border-radius-sm: "6px"
+  ha-border-radius-sm: "5px"
+  ha-border-radius-md: "8px"
+  ha-border-radius-lg: "10px"
+  ha-border-radius-xl: "14px"
+  ha-box-shadow-s: "0 2px 4px rgba(29,61,99,0.15)"
+  ha-box-shadow-m: "0 4px 12px rgba(29,61,99,0.19)"
+  ha-box-shadow-l: "0 10px 24px rgba(29,61,99,0.23)"
+
+  # Pulsanti classici / Material legacy
+  paper-item-icon-color: "#6A90B3"
+  paper-item-icon-active-color: "#1685D6"
+  paper-item-icon_-_color: "#6A90B3"
+  paper-slider-knob-color: "#188CE0"
+  paper-slider-knob-start-color: "#188CE0"
+  paper-slider-pin-color: "#188CE0"
+  paper-slider-active-color: "#1689DE"
+  paper-slider-secondary-color: "#B6DDF8"
+  paper-slider-container-color: "#C2D1DF"
+  paper-toggle-button-checked-button-color: "#FFFFFF"
+  paper-toggle-button-checked-bar-color: "#67BDFC"
+  paper-toggle-button-checked-ink-color: "#1685D6"
+  paper-toggle-button-unchecked-button-color: "#E7ECF2"
+  paper-toggle-button-unchecked-bar-color: "#AFBBC7"
+
+  # Icone e stati: conserviamo colori funzionali e allarmi riconoscibili
+  state-icon-color: "#6B95B7"
+  state-icon-active-color: "#178BE2"
+  state-icon-unavailable-color: "#B2B9C1"
+  state-light-active-color: "#FFBD38"
+  state-switch-active-color: "#168BE1"
+  state-climate-heat-color: "#E78B39"
+  state-climate-cool-color: "#2485D5"
+  state-fan-active-color: "#2485D5"
+  state-lock-locked-color: "#28985B"
+  state-lock-unlocked-color: "#D35C46"
+  state-binary_sensor-problem-on-color: "#D94A4A"
+  state-binary_sensor-safety-on-color: "#D94A4A"
+
+  # Messaggi di sistema ed energia
+  success-color: "#2FA260"
+  warning-color: "#EAA338"
+  error-color: "#D84949"
+  info-color: "#1685D6"
+  energy-grid-consumption-color: "#2485D5"
+  energy-grid-return-color: "#4E9BA6"
+  energy-solar-color: "#E9AE36"
+  energy-battery-out-color: "#40AA82"
+  energy-battery-in-color: "#79B6DB"
+  energy-gas-color: "#B3A0D0"
+
+  # Markdown e popup
+  markdown-link-color: "#096EB7"
+  markdown-table-border-color: "#B8C6D4"
+  ha-dialog-scrim-backdrop-filter: "blur(2px) brightness(75%)"
+
+# Se preferisci lo sfondo blu intenso del desktop originale,
+# sostituisci 'lovelace-background' con questa versione (attenzione al contrasto):
+# lovelace-background: "radial-gradient(ellipse at 20% 5%, #7FA8E0 0%, #3867AD 58%, #183E80 100%) fixed"

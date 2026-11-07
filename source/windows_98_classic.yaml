@@ -1,0 +1,120 @@
+# Home Assistant theme - Windows 98 Classic
+# Tema chiaro: nessun HACS / nessuna custom card necessaria.
+# Installazione: copiare questo file nella cartella config/themes/.
+Windows 98 Classic:
+  # Tavolozza Win98
+  primary-color: "#000080"
+  accent-color: "#008080"
+  dark-primary-color: "#000066"
+  light-primary-color: "#375bc1"
+  primary-background-color: "#c0c0c0"
+  secondary-background-color: "#d4d0c8"
+  card-background-color: "#c0c0c0"
+  clear-background-color: "#ffffff"
+  primary-text-color: "#000000"
+  secondary-text-color: "#404040"
+  text-primary-color: "#ffffff"
+  disabled-text-color: "#808080"
+  divider-color: "#808080"
+
+  # Il classico desktop verde petrolio dietro le schede
+  lovelace-background: "#008080"
+  ha-panel-background: "#c0c0c0"
+  ha-panel-toolbar-background: "#d4d0c8"
+  ha-data-table-background: "#c0c0c0"
+
+  # Barra del titolo e menu laterale
+  app-header-background-color: "#000080"
+  app-header-text-color: "#ffffff"
+  app-header-border-bottom: "2px solid #404040"
+  app-theme-color: "#000080"
+  sidebar-background-color: "#c0c0c0"
+  sidebar-text-color: "#000000"
+  sidebar-icon-color: "#404040"
+  sidebar-selected-icon-color: "#000080"
+  sidebar-selected-text-color: "#000080"
+
+  # Finestre squadrate, bordi e ombreggiatura 3D in rilievo
+  ha-card-background: "#c0c0c0"
+  ha-card-border-radius: "0px"
+  ha-card-border-width: "1px"
+  ha-card-border-color: "#808080"
+  ha-card-box-shadow: "inset 1px 1px 0 #ffffff, inset -1px -1px 0 #404040, 2px 2px 0 #808080"
+  ha-card-header-color: "#000080"
+  ha-card-header-font-size: "18px"
+  ha-section-border-radius: "0px"
+  ha-section-background-color: "transparent"
+  ha-view-sections-extra-top-margin: "20px"
+  ha-view-sections-column-gap: "16px"
+  ha-view-sections-row-gap: "16px"
+  grid-card-gap: "10px"
+  stack-card-gap: "10px"
+
+  # Caratteri disponibili sui sistemi Windows, con fallback
+  ha-font-family-body: 'Tahoma, "MS Sans Serif", Verdana, sans-serif'
+  ha-font-family-heading: 'Tahoma, "MS Sans Serif", Verdana, sans-serif'
+  ha-card-header-font-family: 'Tahoma, "MS Sans Serif", Verdana, sans-serif'
+  ha-font-weight-heading: "700"
+
+  # Token moderni: fanno seguire lo stile anche ai componenti più recenti
+  ha-border-radius-xs: "0px"
+  ha-border-radius-sm: "0px"
+  ha-border-radius-md: "0px"
+  ha-border-radius-lg: "0px"
+  ha-border-radius-xl: "0px"
+  ha-border-radius-2xl: "0px"
+  ha-color-primary-05: "#050519"
+  ha-color-primary-10: "#0b0b33"
+  ha-color-primary-20: "#14144d"
+  ha-color-primary-30: "#000066"
+  ha-color-primary-40: "#000080"
+  ha-color-primary-50: "#1d2a9d"
+  ha-color-primary-60: "#3656ba"
+  ha-color-primary-70: "#738ad1"
+  ha-color-primary-80: "#b0bce9"
+  ha-color-primary-90: "#dbe0fa"
+  ha-color-primary-95: "#f1f3ff"
+  ha-color-surface-default: "#c0c0c0"
+  ha-color-surface-low: "#d4d0c8"
+  ha-color-surface-lower: "#e6e6e6"
+  ha-color-on-surface-default: "#000000"
+  ha-color-text-primary: "#000000"
+  ha-color-text-secondary: "#404040"
+  ha-color-form-background: "#ffffff"
+  ha-color-form-background-hover: "#f4f4f4"
+  ha-color-border-neutral-quiet: "#c0c0c0"
+  ha-color-border-neutral-normal: "#808080"
+  ha-color-border-neutral-loud: "#404040"
+  ha-button-neutral-color: "#c0c0c0"
+  chip-background-color: "#d4d0c8"
+
+  # Icone e segnalazioni: giallo per elementi attivi, rosso per allarmi
+  state-icon-color: "#404040"
+  state-light-active-color: "#ffbf00"
+  state-switch-active-color: "#008080"
+  state-climate-heat-color: "#c04020"
+  state-unavailable-color: "#808080"
+  error-color: "#c00000"
+  warning-color: "#c08000"
+  success-color: "#008000"
+  info-color: "#000080"
+
+  # Controlli e tabelle
+  input-fill-color: "#ffffff"
+  input-ink-color: "#000000"
+  input-label-ink-color: "#404040"
+  input-outlined-idle-border-color: "#808080"
+  input-outlined-hover-border-color: "#000080"
+  slider-color: "#000080"
+  slider-secondary-color: "#808080"
+  table-header-background-color: "#d4d0c8"
+  table-row-background-color: "#c0c0c0"
+  table-row-alternative-background-color: "#d4d0c8"
+  data-table-background-color: "#c0c0c0"
+
+  # Grafici energia
+  energy-solar-color: "#ffbf00"
+  energy-grid-consumption-color: "#000080"
+  energy-grid-return-color: "#008080"
+  energy-battery-in-color: "#008000"
+  energy-battery-out-color: "#808000"

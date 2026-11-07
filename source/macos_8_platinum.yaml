@@ -1,0 +1,153 @@
+# Home Assistant Theme — Mac OS 8 Platinum (1997)
+# Collezione Retro OS | Nessuna dipendenza HACS.
+# Il vero Finder, la barra menu Apple e le righe delle barre titolo
+# richiedono una dashboard personalizzata: non sono creati dal tema.
+#
+# Installazione:
+#  1. Copiare in /config/themes/macos_8_platinum.yaml
+#  2. In configuration.yaml (se non gia presente):
+#       frontend:
+#         themes: !include_dir_merge_named themes
+#  3. Eseguire frontend.reload_themes e scegliere il tema nel profilo.
+#
+# Ispirazione: Platinum originale, grigio argento e selezioni Lavanda.
+# A differenza del nostro Mac OS 9: desktop azzurro-lavanda piu chiaro,
+# contrasto piu netto, rilievo piu pronunciato, pannelli Finder bianchi.
+
+Mac OS 8 Platinum:
+  # Tavolozza 1997: grigi Platinum, selezione Lavender, desktop azzurro
+  primary-color: "#5D5C91"
+  accent-color: "#7771AB"
+  dark-primary-color: "#42426D"
+  light-primary-color: "#D9D7EE"
+  primary-background-color: "#D6D6D6"
+  secondary-background-color: "#E6E6E6"
+  card-background-color: "#E3E3E3"
+  clear-background-color: "#FFFFFF"
+  primary-text-color: "#171717"
+  secondary-text-color: "#515151"
+  text-primary-color: "#FFFFFF"
+  disabled-text-color: "#828282"
+  divider-color: "#939393"
+
+  # Desktop Plum-blue / macOS 8: texture CSS, non richiede immagini.
+  # Su alcune viste Lovelace il background puo essere sovrascritto.
+  lovelace-background: "repeating-linear-gradient(0deg, #A6ACD1 0px, #A6ACD1 2px, #ABB1D6 2px, #ABB1D6 4px) fixed"
+  ha-panel-background: "#D6D6D6"
+  ha-panel-toolbar-background: "#E7E7E7"
+  ha-data-table-background: "#FFFFFF"
+
+  # Menu superiore Macintosh: alluminio chiaro, non barra blu Windows.
+  app-header-background-color: "#E9E9E9"
+  app-header-text-color: "#161616"
+  app-header-border-bottom: "1px solid #777777"
+  app-theme-color: "#E9E9E9"
+
+  # Barra laterale come pannello Finder / Control Strip
+  sidebar-background-color: "#DEDEDE"
+  sidebar-text-color: "#202020"
+  sidebar-icon-color: "#5A5A5A"
+  sidebar-selected-icon-color: "#545180"
+  sidebar-selected-text-color: "#494675"
+
+  # Card a finestra Platinum: metallo con spigoli vivi e bordo a rilievo
+  ha-card-background: "#E3E3E3"
+  ha-card-border-radius: "1px"
+  ha-card-border-width: "1px"
+  ha-card-border-color: "#686868"
+  ha-card-box-shadow: "inset 1px 1px 0 #FFFFFF, inset -1px -1px 0 #969696, 2px 2px 0 #777777"
+  ha-card-header-color: "#222222"
+  ha-card-header-font-size: "17px"
+  ha-card-header-font-family: "Charcoal, Geneva, 'Lucida Grande', Verdana, sans-serif"
+  ha-section-border-radius: "1px"
+  ha-section-background-color: "transparent"
+  ha-view-sections-extra-top-margin: "14px"
+  ha-view-sections-column-gap: "12px"
+  ha-view-sections-row-gap: "12px"
+  grid-card-gap: "10px"
+  stack-card-gap: "10px"
+
+  # Charcoal era il font tipico; viene usato solo se presente sul dispositivo
+  ha-font-family-body: "Charcoal, Geneva, 'Lucida Grande', Verdana, Arial, sans-serif"
+  ha-font-family-heading: "Charcoal, Geneva, 'Lucida Grande', Verdana, Arial, sans-serif"
+  ha-font-weight-heading: "700"
+
+  # Angoli squadrati tipici del Classic Mac OS
+  ha-border-radius-xs: "1px"
+  ha-border-radius-sm: "1px"
+  ha-border-radius-md: "2px"
+  ha-border-radius-lg: "2px"
+  ha-border-radius-xl: "3px"
+  ha-border-radius-2xl: "3px"
+  ha-picture-border-radius: "1px"
+  ha-picture-border-radius-sm: "1px"
+
+  # Scala cromatica per i controlli moderni HA
+  ha-color-primary-05: "#181826"
+  ha-color-primary-10: "#25253B"
+  ha-color-primary-20: "#373758"
+  ha-color-primary-30: "#494975"
+  ha-color-primary-40: "#5D5C91"
+  ha-color-primary-50: "#7771AB"
+  ha-color-primary-60: "#9690C1"
+  ha-color-primary-70: "#B5B1D4"
+  ha-color-primary-80: "#D0CDE5"
+  ha-color-primary-90: "#E6E5F1"
+  ha-color-primary-95: "#F3F2F9"
+
+  # Superfici e design token delle versioni recenti di HA
+  ha-color-surface-default: "#E3E3E3"
+  ha-color-surface-low: "#F3F3F3"
+  ha-color-surface-lower: "#D6D6D6"
+  ha-color-on-surface-default: "#171717"
+  ha-color-text-primary: "#171717"
+  ha-color-text-secondary: "#515151"
+  ha-color-form-background: "#FFFFFF"
+  ha-color-form-background-hover: "#F4F2FA"
+  ha-color-form-background-disabled: "#D5D5D5"
+  ha-color-border-neutral-quiet: "#C3C3C3"
+  ha-color-border-neutral-normal: "#999999"
+  ha-color-border-neutral-loud: "#686868"
+  ha-button-neutral-color: "#DFDFDF"
+  chip-background-color: "#D1D1D1"
+
+  # Controlli incassati, maniglie, selezioni lavanda
+  input-fill-color: "#FFFFFF"
+  input-ink-color: "#171717"
+  input-label-ink-color: "#525252"
+  input-outlined-idle-border-color: "#8A8A8A"
+  input-outlined-hover-border-color: "#5D5C91"
+  slider-color: "#5D5C91"
+  slider-secondary-color: "#AEAEAE"
+  paper-item-icon-color: "#666666"
+  paper-item-icon-active-color: "#5D5C91"
+  paper-toggle-button-checked-button-color: "#FFFFFF"
+  paper-toggle-button-checked-bar-color: "#7771AB"
+  paper-toggle-button-unchecked-button-color: "#EAEAEA"
+  paper-toggle-button-unchecked-bar-color: "#A1A1A1"
+
+  # Finder list view
+  table-header-background-color: "#DADADA"
+  table-row-background-color: "#FFFFFF"
+  table-row-alternative-background-color: "#F2F2F2"
+  data-table-background-color: "#FFFFFF"
+
+  # Stati operativi: mantenere riconoscibili allarmi, clima e luci
+  state-icon-color: "#616161"
+  state-active-color: "#5D5C91"
+  state-inactive-color: "#979797"
+  state-light-active-color: "#D39F2F"
+  state-switch-active-color: "#5D5C91"
+  state-climate-heat-color: "#B7613A"
+  state-unavailable-color: "#9B9B9B"
+  error-color: "#B23535"
+  warning-color: "#A87020"
+  success-color: "#3F7B55"
+  info-color: "#5D5C91"
+
+  # Energia: colori funzionali e differenziati
+  energy-solar-color: "#D29E31"
+  energy-grid-consumption-color: "#5D5C91"
+  energy-grid-return-color: "#6888AA"
+  energy-battery-in-color: "#458565"
+  energy-battery-out-color: "#A97B46"

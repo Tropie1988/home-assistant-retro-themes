@@ -1,0 +1,148 @@
+# Retro OS Collection / Volume II - 01 - Windows 95
+# Ispirazione storica: 1995.
+# Desktop petrolio, grigio argento, blu navy e pulsanti Win95 con forte rilievo.
+# Tema Home Assistant nativo, senza HACS e senza card aggiuntive.
+# Copiare in /config/themes/ e lanciare frontend.reload_themes.
+# Per la raccolta: frontend: + themes: !include_dir_merge_named themes
+# Nota: Fedelta al tema Classic: nessun effetto Start o finestra mobile dal solo YAML.
+# Le variabili grafiche dipendono dal frontend Home Assistant in uso.
+
+Windows 95 Classic:
+
+  # Colori principali
+  primary-color: "#000080"
+  accent-color: "#008080"
+  dark-primary-color: "#00004B"
+  light-primary-color: "#6981C3"
+  primary-background-color: "#C0C0C0"
+  secondary-background-color: "#DFDFDF"
+  card-background-color: "#C0C0C0"
+  clear-background-color: "#FFFFFF"
+  primary-text-color: "#111111"
+  secondary-text-color: "#434343"
+  text-primary-color: "#FFFFFF"
+  disabled-text-color: "#777777"
+  divider-color: "#888888"
+
+  # Desktop, pannelli e aree dati
+  lovelace-background: "#008080"
+  ha-panel-background: "#C0C0C0"
+  ha-panel-toolbar-background: "#D7D7D7"
+  ha-data-table-background: "#FFFFFF"
+
+  # Barra superiore e navigazione
+  app-header-background-color: "#000080"
+  app-header-text-color: "#FFFFFF"
+  app-header-border-bottom: "2px solid #404040"
+  app-theme-color: "#000080"
+  sidebar-background-color: "#C0C0C0"
+  sidebar-text-color: "#111111"
+  sidebar-icon-color: "#454545"
+  sidebar-selected-icon-color: "#000080"
+  sidebar-selected-text-color: "#000080"
+
+  # Finestre e schede dal bordo vintage
+  ha-card-background: "#C0C0C0"
+  ha-card-border-radius: "0px"
+  ha-card-border-width: "1px"
+  ha-card-border-color: "#7D7D7D"
+  ha-card-box-shadow: "inset 2px 2px 0 #FFFFFF, inset -2px -2px 0 #666666, 2px 2px 0 #404040"
+  ha-card-header-color: "#000080"
+  ha-card-header-font-size: "17px"
+  ha-card-header-font-family: "\"MS Sans Serif\", Tahoma, Verdana, Arial, sans-serif"
+  ha-section-border-radius: "0px"
+  ha-section-background-color: "transparent"
+  ha-view-sections-extra-top-margin: "16px"
+  ha-view-sections-column-gap: "12px"
+  ha-view-sections-row-gap: "12px"
+  grid-card-gap: "10px"
+  stack-card-gap: "10px"
+
+  # Font e geometria
+  ha-font-family-body: "\"MS Sans Serif\", Tahoma, Verdana, Arial, sans-serif"
+  ha-font-family-heading: "\"MS Sans Serif\", Tahoma, Verdana, Arial, sans-serif"
+  ha-font-family-code: "\"Lucida Console\", Monaco, monospace"
+  ha-font-weight-heading: "700"
+  ha-font-weight-body: "400"
+  ha-border-radius-xs: "0px"
+  ha-border-radius-sm: "0px"
+  ha-border-radius-md: "0px"
+  ha-border-radius-lg: "0px"
+  ha-border-radius-xl: "0px"
+  ha-border-radius-2xl: "0px"
+  ha-picture-border-radius: "0px"
+  ha-picture-border-radius-sm: "0px"
+
+  # Palette dei componenti moderni
+  ha-color-primary-05: "#06091E"
+  ha-color-primary-10: "#05082C"
+  ha-color-primary-20: "#040548"
+  ha-color-primary-30: "#020264"
+  ha-color-primary-40: "#000080"
+  ha-color-primary-50: "#292994"
+  ha-color-primary-60: "#5252A9"
+  ha-color-primary-70: "#7B7BBD"
+  ha-color-primary-80: "#A5A5D2"
+  ha-color-primary-90: "#CECEE6"
+  ha-color-primary-95: "#E2E2F1"
+
+  # Design token per superfici, campi e bottoni
+  ha-color-surface-default: "#C0C0C0"
+  ha-color-surface-low: "#DFDFDF"
+  ha-color-surface-lower: "#C0C0C0"
+  ha-color-on-surface-default: "#111111"
+  ha-color-text-primary: "#111111"
+  ha-color-text-secondary: "#434343"
+  ha-color-text-link: "#000080"
+  ha-color-form-background: "#FFFFFF"
+  ha-color-form-background-hover: "#F2F2F2"
+  ha-color-form-background-disabled: "#C0C0C0"
+  ha-color-border-neutral-quiet: "#C4C4C4"
+  ha-color-border-neutral-normal: "#7D7D7D"
+  ha-color-border-neutral-loud: "#454545"
+  ha-color-border-primary-quiet: "#B2B2D9"
+  ha-color-border-primary-normal: "#6666B3"
+  ha-color-border-primary-loud: "#000080"
+  ha-button-neutral-color: "#C0C0C0"
+  chip-background-color: "#D8D8D8"
+  ha-box-shadow-s: "1px 1px 0 rgba(0,0,0,.22)"
+  ha-box-shadow-m: "2px 3px 0 rgba(0,0,0,.24)"
+
+  # Interazioni, moduli e tabelle
+  input-fill-color: "#FFFFFF"
+  input-ink-color: "#111111"
+  input-label-ink-color: "#434343"
+  input-outlined-idle-border-color: "#7D7D7D"
+  input-outlined-hover-border-color: "#000080"
+  slider-color: "#000080"
+  slider-secondary-color: "#8C8CC6"
+  paper-item-icon-color: "#454545"
+  paper-item-icon-active-color: "#000080"
+  paper-toggle-button-checked-button-color: "#FFFFFF"
+  paper-toggle-button-checked-bar-color: "#008080"
+  paper-toggle-button-unchecked-button-color: "#C0C0C0"
+  paper-toggle-button-unchecked-bar-color: "#7D7D7D"
+  table-header-background-color: "#D7D7D7"
+  table-row-background-color: "#FFFFFF"
+  table-row-alternative-background-color: "#DFDFDF"
+  data-table-background-color: "#FFFFFF"
+
+  # Stati dispositivi e segnalazioni
+  state-icon-color: "#454545"
+  state-active-color: "#000080"
+  state-inactive-color: "#777777"
+  state-light-active-color: "#E7AD17"
+  state-switch-active-color: "#008080"
+  state-climate-heat-color: "#BF5837"
+  state-unavailable-color: "#777777"
+  error-color: "#BA2424"
+  warning-color: "#B27800"
+  success-color: "#15773F"
+  info-color: "#000080"
+
+  # Plancia Energia (fotovoltaico, rete, accumulo)
+  energy-solar-color: "#E6AF1C"
+  energy-grid-consumption-color: "#000080"
+  energy-grid-return-color: "#008080"
+  energy-battery-in-color: "#15773F"
+  energy-battery-out-color: "#A77700"
