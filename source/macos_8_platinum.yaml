@@ -1,4 +1,6 @@
 # Home Assistant Theme — Mac OS 8 Platinum (1997)
+# Variante mirata: aumenta il contrasto SOLO delle icone e degli stati attivi.
+# Mantiene invariata la resa generale Platinum / System 8 del tema originale.
 # Collezione Retro OS | Nessuna dipendenza HACS.
 # Il vero Finder, la barra menu Apple e le righe delle barre titolo
 # richiedono una dashboard personalizzata: non sono creati dal tema.
@@ -47,7 +49,7 @@ Mac OS 8 Platinum:
   sidebar-background-color: "#DEDEDE"
   sidebar-text-color: "#202020"
   sidebar-icon-color: "#5A5A5A"
-  sidebar-selected-icon-color: "#545180"
+  sidebar-selected-icon-color: "#433FA3"
   sidebar-selected-text-color: "#494675"
 
   # Card a finestra Platinum: metallo con spigoli vivi e bordo a rilievo
@@ -119,8 +121,8 @@ Mac OS 8 Platinum:
   input-outlined-hover-border-color: "#5D5C91"
   slider-color: "#5D5C91"
   slider-secondary-color: "#AEAEAE"
-  paper-item-icon-color: "#666666"
-  paper-item-icon-active-color: "#5D5C91"
+  paper-item-icon-color: "#5F5F5F"
+  paper-item-icon-active-color: "#433FA3"
   paper-toggle-button-checked-button-color: "#FFFFFF"
   paper-toggle-button-checked-bar-color: "#7771AB"
   paper-toggle-button-unchecked-button-color: "#EAEAEA"
@@ -133,17 +135,17 @@ Mac OS 8 Platinum:
   data-table-background-color: "#FFFFFF"
 
   # Stati operativi: mantenere riconoscibili allarmi, clima e luci
-  state-icon-color: "#616161"
-  state-active-color: "#5D5C91"
+  state-icon-color: "#5C5C5C"
+  state-active-color: "#433FA3"
   state-inactive-color: "#979797"
   state-light-active-color: "#D39F2F"
-  state-switch-active-color: "#5D5C91"
+  state-switch-active-color: "#433FA3"
   state-climate-heat-color: "#B7613A"
   state-unavailable-color: "#9B9B9B"
   error-color: "#B23535"
   warning-color: "#A87020"
   success-color: "#3F7B55"
-  info-color: "#5D5C91"
+  info-color: "#433FA3"
 
   # Energia: colori funzionali e differenziati
   energy-solar-color: "#D29E31"
