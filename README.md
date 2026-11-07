@@ -6,9 +6,40 @@
 
 The themes use native Home Assistant YAML: **no custom cards or frontend dependencies**. Each theme has its own selectable name in the profile, but the Marketplace installs a single generated YAML bundle.
 
-![Illustrative gallery generated from actual theme colors](assets/theme-gallery.png)
+## Real Home Assistant screenshots
 
-*Illustrative UI previews generated from each theme's YAML colors — **not** screenshots of a running Home Assistant instance. Real screenshots should be added after device testing and before catalog submission.*
+Screenshots supplied by the maintainer from the same running dashboard. Cards, entities and dashboard layout are examples and are not included with the themes.
+
+### Mac OS 8 Platinum
+
+![Mac OS 8 Platinum on a real Home Assistant dashboard](assets/screenshots/macos-8-platinum.png)
+
+<details>
+<summary>More real screenshots: Windows, BeOS, Solaris, Macintosh and Amiga</summary>
+
+### Windows Classic
+
+![Windows Classic on a real Home Assistant dashboard](assets/screenshots/windows-classic.png)
+
+### BeOS R5 Tracker
+
+![BeOS R5 Tracker on a real Home Assistant dashboard](assets/screenshots/beos-r5-tracker.png)
+
+### Solaris CDE Motif
+
+![Solaris CDE Motif on a real Home Assistant dashboard](assets/screenshots/solaris-cde-motif.png)
+
+### Classic Macintosh
+
+![Classic Macintosh on a real Home Assistant dashboard](assets/screenshots/classic-macintosh.png)
+
+### Amiga Workbench 2.x
+
+![Amiga Workbench 2.x on a real Home Assistant dashboard](assets/screenshots/amiga-workbench-2x.png)
+
+</details>
+
+Installation as a custom HACS repository and delivery of the Mac OS 8 Platinum update have been confirmed by the maintainer.
 
 ## Themes included
 
@@ -50,7 +81,7 @@ The YAML reproduces original OS color schemes, square corners, classic window bo
 
 ## Development
 
-The original 16 theme files are preserved unmodified in [`source/`](source/). The Marketplace expects **one theme YAML file per repository**, so [`tools/build.py`](tools/build.py) concatenates them into [`themes/retro_os_collection.yaml`](themes/retro_os_collection.yaml), preserving each original theme's variables.
+The 16 individual theme source files are maintained in [`source/`](source/). The Marketplace expects **one theme YAML file per repository**, so [`tools/build.py`](tools/build.py) concatenates them into [`themes/retro_os_collection.yaml`](themes/retro_os_collection.yaml), preserving each original theme's variables.
 
 ```bash
 python tools/build.py
@@ -63,11 +94,11 @@ The CI workflow also runs [`hacs/action`](https://github.com/hacs/action) with `
 
 ## Testing checklist before the first catalog release
 
-- [ ] Test installation as a custom Marketplace repository on Home Assistant 2026.11+.
+- [x] Test installation and theme updates as a custom HACS repository.
 - [ ] Verify all 16 themes appear individually in the profile.
 - [ ] Check visibility and contrast on mobile and desktop, light-themed and dark-themed cards.
 - [ ] Test sections view, sidebar, dialogs and form controls.
-- [ ] Replace/add the illustrative previews with **real Home Assistant screenshots** in the README.
+- [x] Add **real Home Assistant screenshots** to the README.
 - [ ] Add GitHub repository description, topics and enable Issues.
 - [ ] Confirm the HACS GitHub Action passes with no ignored checks.
 - [ ] Publish the first stable GitHub Release (`v1.0.0`) and submit a catalog PR to [`hacs/default`](https://github.com/hacs/default).
