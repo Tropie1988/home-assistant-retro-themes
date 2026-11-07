@@ -95,9 +95,9 @@ The CI workflow also runs [`hacs/action`](https://github.com/hacs/action) with `
 ## Testing checklist before the first catalog release
 
 - [x] Test installation and theme updates as a custom HACS repository.
-- [ ] Verify all 16 themes appear individually in the profile.
-- [ ] Check visibility and contrast on mobile and desktop, light-themed and dark-themed cards.
-- [ ] Test sections view, sidebar, dialogs and form controls.
+- [x] Verify all 16 themes appear individually in the profile.
+- [x] Check visibility and contrast on mobile and desktop, light-themed and dark-themed cards.
+- [x] Test sections view, sidebar, dialogs and form controls.
 - [x] Add **real Home Assistant screenshots** to the README.
 - [ ] Add GitHub repository description, topics and enable Issues.
 - [ ] Confirm the HACS GitHub Action passes with no ignored checks.
