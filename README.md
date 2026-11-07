@@ -8,7 +8,7 @@ The themes use native Home Assistant YAML: **no custom cards or frontend depende
 
 ## Real Home Assistant screenshots
 
-Screenshots supplied by the maintainer from the same running dashboard. Cards, entities and dashboard layout are examples and are not included with the themes.
+Screenshots supplied by the maintainer from the same running dashboard, cropped to remove the sidebar with the test navigation label removed. Cards, entities and dashboard layout are examples and are not included with the themes.
 
 ### Mac OS 8 Platinum
 
