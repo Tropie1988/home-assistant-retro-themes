@@ -12,30 +12,30 @@ Screenshots supplied by the maintainer from the same running dashboard, cropped 
 
 ### Mac OS 8 Platinum
 
-![Mac OS 8 Platinum on a real Home Assistant dashboard](assets/screenshots/macos-8-platinum.png)
+![Mac OS 8 Platinum on a real Home Assistant dashboard](assets/screenshots/macos-8-platinum-clean.png)
 
 <details>
 <summary>More real screenshots: Windows, BeOS, Solaris, Macintosh and Amiga</summary>
 
 ### Windows Classic
 
-![Windows Classic on a real Home Assistant dashboard](assets/screenshots/windows-classic.png)
+![Windows Classic on a real Home Assistant dashboard](assets/screenshots/windows-classic-clean.png)
 
 ### BeOS R5 Tracker
 
-![BeOS R5 Tracker on a real Home Assistant dashboard](assets/screenshots/beos-r5-tracker.png)
+![BeOS R5 Tracker on a real Home Assistant dashboard](assets/screenshots/beos-r5-tracker-clean.png)
 
 ### Solaris CDE Motif
 
-![Solaris CDE Motif on a real Home Assistant dashboard](assets/screenshots/solaris-cde-motif.png)
+![Solaris CDE Motif on a real Home Assistant dashboard](assets/screenshots/solaris-cde-motif-clean.png)
 
 ### Classic Macintosh
 
-![Classic Macintosh on a real Home Assistant dashboard](assets/screenshots/classic-macintosh.png)
+![Classic Macintosh on a real Home Assistant dashboard](assets/screenshots/classic-macintosh-clean.png)
 
 ### Amiga Workbench 2.x
 
-![Amiga Workbench 2.x on a real Home Assistant dashboard](assets/screenshots/amiga-workbench-2x.png)
+![Amiga Workbench 2.x on a real Home Assistant dashboard](assets/screenshots/amiga-workbench-2x-clean.png)
 
 </details>
 
