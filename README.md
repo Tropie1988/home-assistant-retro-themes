@@ -101,8 +101,8 @@ The CI workflow also runs [`hacs/action`](https://github.com/hacs/action) with `
 - [x] Add **real Home Assistant screenshots** to the README.
 - [x] Add GitHub repository description, topics and enable Issues.
 - [x] Confirm the HACS GitHub Action passes with no ignored checks.
-- [ ] Publish the first stable GitHub Release (`v1.0.0`).
-- [ ] Submit a catalog PR to [`hacs/default`](https://github.com/hacs/default).
+- [x] Publish the first stable GitHub Release ([`v1.0.0`](https://github.com/Tropie1988/home-assistant-retro-themes/releases/tag/v1.0.0)).
+- [x] Submit a catalog PR to [`hacs/default`](https://github.com/hacs/default): [#13557](https://github.com/hacs/default/pull/13557) — awaiting maintainer review.
 
 ## Attribution & license
 
