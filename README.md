@@ -1,49 +1,47 @@
-# Retro OS Themes — Home Assistant Edition
+# Retro OS Themes for Home Assistant
 
 [![Open in Home Assistant Marketplace](https://my.home-assistant.io/badges/marketplace_repository.svg)](https://my.home-assistant.io/redirect/marketplace_repository/?owner=Tropie1988&repository=home-assistant-retro-themes&category=theme)
 
-**Sixteen classic operating-system-inspired themes for Home Assistant**, from Windows 3.1 through Mac OS X 10.0, BeOS, Solaris CDE, OS/2 Warp, Amiga Workbench and Lisa OS.
+Remember the look of Windows 95, Mac OS 8 or Amiga Workbench? This collection brings a bit of that nostalgia to Home Assistant. It includes **16 themes** inspired by classic operating systems, from monochrome Macintosh to the colorful desktops of the late '90s.
 
-The themes use native Home Assistant YAML: **no custom cards or frontend dependencies**. Each theme has its own selectable name in the profile, but the Marketplace installs a single generated YAML bundle.
+Pick any theme from your Home Assistant profile. No custom cards or frontend add-ons are needed.
 
-## Real Home Assistant screenshots
+## See them in action
 
-Screenshots supplied by the maintainer from the same running dashboard, cropped to remove the sidebar with the test navigation label removed. Cards, entities and dashboard layout are examples and are not included with the themes.
+These screenshots show the themes on my Home Assistant dashboard. The cards, entities and dashboard layout are just examples; the themes change the appearance of your own setup.
 
 ### Mac OS 8 Platinum
 
-![Mac OS 8 Platinum on a real Home Assistant dashboard](assets/screenshots/macos-8-platinum-clean.png)
+![Mac OS 8 Platinum on a Home Assistant dashboard](assets/screenshots/macos-8-platinum-clean.png)
 
 <details>
-<summary>More real screenshots: Windows, BeOS, Solaris, Macintosh and Amiga</summary>
+<summary>More screenshots: Windows, BeOS, Solaris, Macintosh and Amiga</summary>
 
 ### Windows Classic
 
-![Windows Classic on a real Home Assistant dashboard](assets/screenshots/windows-classic-clean.png)
+![Windows Classic on a Home Assistant dashboard](assets/screenshots/windows-classic-clean.png)
 
 ### BeOS R5 Tracker
 
-![BeOS R5 Tracker on a real Home Assistant dashboard](assets/screenshots/beos-r5-tracker-clean.png)
+![BeOS R5 Tracker on a Home Assistant dashboard](assets/screenshots/beos-r5-tracker-clean.png)
 
 ### Solaris CDE Motif
 
-![Solaris CDE Motif on a real Home Assistant dashboard](assets/screenshots/solaris-cde-motif-clean.png)
+![Solaris CDE Motif on a Home Assistant dashboard](assets/screenshots/solaris-cde-motif-clean.png)
 
 ### Classic Macintosh
 
-![Classic Macintosh on a real Home Assistant dashboard](assets/screenshots/classic-macintosh-clean.png)
+![Classic Macintosh on a Home Assistant dashboard](assets/screenshots/classic-macintosh-clean.png)
 
 ### Amiga Workbench 2.x
 
-![Amiga Workbench 2.x on a real Home Assistant dashboard](assets/screenshots/amiga-workbench-2x-clean.png)
+![Amiga Workbench 2.x on a Home Assistant dashboard](assets/screenshots/amiga-workbench-2x-clean.png)
 
 </details>
 
-Installation as a custom HACS repository and delivery of the Mac OS 8 Platinum update have been confirmed by the maintainer.
+## The 16 themes
 
-## Themes included
-
-| Family | Theme names |
+| Family | Themes |
 | --- | --- |
 | Windows | Windows 3.1 Program Manager · Windows 95 Classic · Windows 98 Classic · Windows NT 4.0 Workstation · Windows 2000 Professional · Windows XP Luna Blue |
 | Classic Mac | Macintosh System 6 Monochrome · Macintosh System 7 Classic · Mac OS 8 Platinum · Mac OS 9 Platinum |
@@ -52,36 +50,35 @@ Installation as a custom HACS repository and delivery of the Mac OS 8 Platinum u
 
 ## Install
 
-### Marketplace (Home Assistant 2026.11 or later)
+### From the Home Assistant Marketplace
 
-1. Open **Settings → Marketplace** in Home Assistant.
-2. Add this GitHub repository as a **custom repository** of type `theme` if it has not yet been accepted into the catalog.
-3. Install **Retro OS Themes — Home Assistant Edition**.
-4. Go to your **user profile → Theme** and choose any of the 16 themes.
+1. Open **Settings → Marketplace** and search for **Retro OS Themes**.
+2. Install the collection.
+3. Open your **user profile → Theme** and choose one of the 16 themes.
 
-### Manual install
+You can also use the Marketplace button at the top of this page. All 16 choices come in one installable theme bundle.
 
-1. Download [`themes/retro_os_collection.yaml`](themes/retro_os_collection.yaml).
-2. Copy it into your Home Assistant configuration folder as `/config/themes/retro_os_collection.yaml`.
-3. Ensure `configuration.yaml` includes the following; do not duplicate an existing `frontend:` block:
+### Manually
+
+1. Download [`themes/retro_os_collection.yaml`](themes/retro_os_collection.yaml) and copy it to `/config/themes/retro_os_collection.yaml`.
+2. Add the following to your Home Assistant `configuration.yaml` if you haven't already configured themes. If you have a `frontend:` block, add the `themes:` line inside it instead of creating a second block:
 
 ```yaml
 frontend:
   themes: !include_dir_merge_named themes
 ```
 
-4. Run the `frontend.reload_themes` action, or restart Home Assistant.
-5. Select a theme from your **user profile**.
+3. Run the `frontend.reload_themes` action (or restart Home Assistant), then pick a theme from your profile.
 
-> The `!include_dir_merge_named` tag belongs in **Home Assistant configuration.yaml only**. The installable theme file itself has no custom YAML tags.
+## A few details
 
-## What these themes change
+The themes change colors, borders, corners, shadows and the look of cards, the sidebar and the toolbar. Fonts are used where they're available on your device. Home Assistant cards and frontend versions can render some details differently; these are themes for Home Assistant, not recreations of the original operating systems or their desktop features.
 
-The YAML reproduces original OS color schemes, square corners, classic window borders, shadows, typography *when fonts are locally available*, and themed card / sidebar / toolbar colors. A theme **cannot** recreate a functional Windows taskbar, Macintosh Finder, BeOS Deskbar, original system fonts on every device, or a full desktop UI. Some variables depend on the Home Assistant frontend version, the browser and the dashboard card in use.
+Mac OS 8 Platinum is the version I use myself. Its active icons have a little more contrast while keeping the classic Platinum palette.
 
-## Development
+## For contributors
 
-The 16 individual theme source files are maintained in [`source/`](source/). The Marketplace expects **one theme YAML file per repository**, so [`tools/build.py`](tools/build.py) concatenates them into [`themes/retro_os_collection.yaml`](themes/retro_os_collection.yaml), preserving each original theme's variables.
+The individual YAML files live in [`source/`](source/). [`tools/build.py`](tools/build.py) combines them into the single [Marketplace bundle](themes/retro_os_collection.yaml). If you change a theme, edit its source file and rebuild the bundle:
 
 ```bash
 python tools/build.py
@@ -90,28 +87,8 @@ python tools/validate.py
 python tools/build.py --check
 ```
 
-The CI workflow also runs [`hacs/action`](https://github.com/hacs/action) with `category: theme`. Never edit the generated `themes/retro_os_collection.yaml` directly — edit the individual source and rebuild.
+GitHub Actions runs these checks and HACS validation for each change. If you find a rough edge, [open an issue](https://github.com/Tropie1988/home-assistant-retro-themes/issues).
 
-## Testing checklist before the first catalog release
+## License
 
-- [x] Test installation and theme updates as a custom HACS repository.
-- [x] Verify all 16 themes appear individually in the profile.
-- [x] Check visibility and contrast on mobile and desktop, light-themed and dark-themed cards.
-- [x] Test sections view, sidebar, dialogs and form controls.
-- [x] Add **real Home Assistant screenshots** to the README.
-- [x] Add GitHub repository description, topics and enable Issues.
-- [x] Confirm the HACS GitHub Action passes with no ignored checks.
-- [x] Publish the first stable GitHub Release ([`v1.0.0`](https://github.com/Tropie1988/home-assistant-retro-themes/releases/tag/v1.0.0)).
-- [x] Submit a catalog PR to [`hacs/default`](https://github.com/hacs/default): [#13557](https://github.com/hacs/default/pull/13557) — awaiting maintainer review.
-
-## Attribution & license
-
-The visual themes are original configurations inspired by the look and feel of historical operating systems. They are **not endorsed by Microsoft, Apple, Be Inc., Sun Microsystems, IBM, Commodore or Amiga rights holders**. No proprietary OS artwork, system font binaries, or brand logos are shipped.
-
-Source code is offered under the MIT License; see [LICENSE](LICENSE).
-
-## Official publishing documentation
-
-- [Home Assistant Marketplace: publishing themes](https://contributors.home-assistant.io/marketplace/guides/themes/)
-- [Repository structure](https://contributors.home-assistant.io/marketplace/reference/repository-structure/)
-- [Catalog submission](https://contributors.home-assistant.io/marketplace/guides/catalog/)
+The themes are original configurations inspired by historical operating systems. This repository isn't affiliated with their creators and doesn't include proprietary artwork, font files or logos. Released under the [MIT License](LICENSE).
